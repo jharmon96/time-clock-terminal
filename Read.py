@@ -12,9 +12,9 @@ signInTxt = ''
 
 # While reading card
 while True:
+
     try:
         id, text = reader.read()
-        # print(id)
 
         # Return the last time this user scanned in or out
         sql = "SELECT a.direction FROM timeLog a LEFT OUTER JOIN timeLog b " \
